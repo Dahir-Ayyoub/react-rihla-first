@@ -1,0 +1,49 @@
+.card{
+    /* border: none; */
+}
+.line-title {
+    position: relative;
+    width: 380px;
+  }   
+  .line-title::before,
+  .line-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    border-radius: 2px;
+  }
+  .line-title::before {
+    width: 100%;
+    background: #f2f2f2;
+  }
+  .line-title::after {
+    width: 165px;
+    background: #e73700;
+  }
+  .list-group-item {
+    font-size: 26px;
+    cursor: pointer;
+    margin-bottom: 10px; 
+    padding:18px; 
+    border-radius: 12px;
+    transition: background-color 0.3s ease; 
+}
+.list-group-item:hover {
+    background-color: #f8f9fa; 
+}
+.list-group-item.active {
+    background-color: #ef9b11;
+    border-end-end-radius: 25px;
+    border-top-right-radius: 25px;
+    color: white;
+    padding: 22px;
+}
+.list-group-item i {
+    margin-right: 8px; 
+}
+.list-group-item.active i {
+    color: white; 
+  }
+  
